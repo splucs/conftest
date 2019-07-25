@@ -4,27 +4,16 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/containerd/containerd/log"
 	"github.com/hashicorp/go-multierror"
 	"github.com/open-policy-agent/opa/ast"
 	"github.com/splucs/conftest/pkg/parser"
 )
 
-type Tester struct {
-	compiler *ast.Compiler
+func BuildCompiler(path string) (*ast.Compiler, error) {
+	return buildCompiler(path)
 }
 
-func BuildTester(ctx context.Context, policiesDir string) (*Tester, error) {
-	compiler, err := buildCompiler(policiesDir)
-	if err != nil {
-		log.G(ctx).Fatalf("Problem building rego compiler: %s", err)
-	}
-	return &Tester{
-		compiler: compiler,
-	}, err
-}
-
-func (t *Tester) ProcessManifest(ctx context.Context, data []byte) (error, error) {
+func ProcessManifest(ctx context.Context, data []byte, compiler *ast.Compiler) (error, error) {
 	linebreak := detectLineBreak(data)
 	bits := bytes.Split(data, []byte(linebreak+"---"+linebreak))
 
@@ -38,7 +27,7 @@ func (t *Tester) ProcessManifest(ctx context.Context, data []byte) (error, error
 		if err != nil {
 			return err, nil
 		}
-		failures, warnings := processData(ctx, input, t.compiler)
+		failures, warnings := processData(ctx, input, compiler)
 		if failures != nil {
 			failuresList = multierror.Append(failuresList, failures)
 		}
