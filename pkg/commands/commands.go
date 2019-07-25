@@ -6,12 +6,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-
-	"github.com/instrumenta/conftest/pkg/commands/pull"
-	"github.com/instrumenta/conftest/pkg/commands/push"
-	"github.com/instrumenta/conftest/pkg/commands/test"
-	"github.com/instrumenta/conftest/pkg/commands/update"
-	"github.com/instrumenta/conftest/pkg/constants"
+	"github.com/splucs/conftest/pkg/commands/pull"
+	"github.com/splucs/conftest/pkg/commands/push"
+	"github.com/splucs/conftest/pkg/commands/test"
+	"github.com/splucs/conftest/pkg/commands/update"
+	"github.com/splucs/conftest/pkg/constants"
 )
 
 // NewDefaultCommand creates the default command

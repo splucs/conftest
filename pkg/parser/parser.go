@@ -3,10 +3,10 @@ package parser
 import (
 	"path/filepath"
 
-	"github.com/instrumenta/conftest/pkg/parser/cue"
-	"github.com/instrumenta/conftest/pkg/parser/terraform"
-	"github.com/instrumenta/conftest/pkg/parser/toml"
-	"github.com/instrumenta/conftest/pkg/parser/yaml"
+	"github.com/splucs/conftest/pkg/parser/cue"
+	"github.com/splucs/conftest/pkg/parser/terraform"
+	"github.com/splucs/conftest/pkg/parser/toml"
+	"github.com/splucs/conftest/pkg/parser/yaml"
 )
 
 // Parser is the interface implemented by objects that can unmarshal

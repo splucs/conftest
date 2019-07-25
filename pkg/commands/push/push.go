@@ -7,8 +7,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/instrumenta/conftest/pkg/constants"
-
 	"github.com/containerd/containerd/log"
 	"github.com/containerd/containerd/remotes/docker"
 	auth "github.com/deislabs/oras/pkg/auth/docker"
@@ -16,6 +14,7 @@ import (
 	"github.com/deislabs/oras/pkg/oras"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/spf13/cobra"
+	"github.com/splucs/conftest/pkg/constants"
 )
 
 // NewPushCommand creates a new push command

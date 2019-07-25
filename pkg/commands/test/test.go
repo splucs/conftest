@@ -13,10 +13,6 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/instrumenta/conftest/pkg/commands/update"
-	"github.com/instrumenta/conftest/pkg/constants"
-	"github.com/instrumenta/conftest/pkg/parser"
-
 	"github.com/containerd/containerd/log"
 	"github.com/hashicorp/go-multierror"
 	"github.com/logrusorgru/aurora"
@@ -25,6 +21,9 @@ import (
 	"github.com/open-policy-agent/opa/topdown"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/splucs/conftest/pkg/commands/update"
+	"github.com/splucs/conftest/pkg/constants"
+	"github.com/splucs/conftest/pkg/parser"
 )
 
 var (

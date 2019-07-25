@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/instrumenta/conftest/pkg/policy"
+	"github.com/splucs/conftest/pkg/policy"
 )
 
 func TestPoliciesToPull(t *testing.T) {

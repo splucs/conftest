@@ -3,9 +3,8 @@ package pull
 import (
 	"context"
 
-	"github.com/instrumenta/conftest/pkg/policy"
-
 	"github.com/spf13/cobra"
+	"github.com/splucs/conftest/pkg/policy"
 )
 
 // NewPullCommand creates a new pull command

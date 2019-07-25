@@ -3,11 +3,10 @@ package update
 import (
 	"context"
 
-	"github.com/instrumenta/conftest/pkg/policy"
-
 	"github.com/containerd/containerd/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/splucs/conftest/pkg/policy"
 )
 
 type Config struct {
