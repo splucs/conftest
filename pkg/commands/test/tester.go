@@ -24,7 +24,7 @@ func BuildTester(ctx context.Context, policiesDir string) (*Tester, error) {
 	}, err
 }
 
-func (t *Tester) ProcessManifest(ctx context.Context, data []byte, compiler *ast.Compiler) (error, error) {
+func (t *Tester) ProcessManifest(ctx context.Context, data []byte) (error, error) {
 	linebreak := detectLineBreak(data)
 	bits := bytes.Split(data, []byte(linebreak+"---"+linebreak))
 
@@ -38,7 +38,7 @@ func (t *Tester) ProcessManifest(ctx context.Context, data []byte, compiler *ast
 		if err != nil {
 			return err, nil
 		}
-		failures, warnings := processData(ctx, input, compiler)
+		failures, warnings := processData(ctx, input, t.compiler)
 		if failures != nil {
 			failuresList = multierror.Append(failuresList, failures)
 		}
