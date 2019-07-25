@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4733c64-4fce-4795-a7ea-fca4c2134925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/commands/test/tester.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/commands.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/pull/pull.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/pull/pull.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/pull/pull_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/pull/pull_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/push/push.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/push/push.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/test/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/test/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/commands/update/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/commands/update/update.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/parser/parser.go" afterDir="false" />
-    </list>
+    <list default="true" id="d4733c64-4fce-4795-a7ea-fca4c2134925" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +29,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pkg/commands/test/tester.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="32" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="32" />
+                <state relative-caret-position="750">
+                  <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
                   <folding>
-                    <element signature="e#14#116#0" expanded="true" />
+                    <element signature="e#14#204#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -183,30 +172,6 @@
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
               <item name="github.com" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="conftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conftest" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="containerd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="conftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conftest" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="containerd" type="462c0819:PsiDirectoryNode" />
-              <item name="containerd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="conftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conftest" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="containerd" type="462c0819:PsiDirectoryNode" />
-              <item name="containerd" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -235,9 +200,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="2560" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,8 +213,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32981133" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.20679246" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20679246" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -321,10 +285,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pkg/commands/test/tester.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="750">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
-            <element signature="e#14#116#0" expanded="true" />
+            <element signature="e#14#204#0" expanded="true" />
           </folding>
         </state>
       </provider>

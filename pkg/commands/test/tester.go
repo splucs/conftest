@@ -21,7 +21,7 @@ func BuildTester(ctx context.Context, policiesDir string) (*Tester, error) {
 	}
 	return &Tester{
 		compiler: compiler,
-	}, nil
+	}, err
 }
 
 func (t *Tester) ProcessManifest(ctx context.Context, data []byte, compiler *ast.Compiler) (error, error) {
