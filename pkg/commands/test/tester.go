@@ -9,11 +9,21 @@ import (
 	"github.com/splucs/conftest/pkg/parser"
 )
 
-func BuildCompiler(path string) (*ast.Compiler, error) {
-	return buildCompiler(path)
+type StaticTester struct {
+	compiler *ast.Compiler
 }
 
-func ProcessManifest(ctx context.Context, data []byte, compiler *ast.Compiler) (error, error) {
+func BuildCompiler(path string) (*StaticTester, error) {
+	compiler, err := buildCompiler(path)
+	if err != nil {
+		return nil, err
+	}
+	return &StaticTester{
+		compiler: compiler,
+	}, nil
+}
+
+func (s *StaticTester) ProcessManifest(ctx context.Context, data []byte) (error, error) {
 	linebreak := detectLineBreak(data)
 	bits := bytes.Split(data, []byte(linebreak+"---"+linebreak))
 
@@ -27,7 +37,7 @@ func ProcessManifest(ctx context.Context, data []byte, compiler *ast.Compiler) (
 		if err != nil {
 			return err, nil
 		}
-		failures, warnings := processData(ctx, input, compiler)
+		failures, warnings := processData(ctx, input, s.compiler)
 		if failures != nil {
 			failuresList = multierror.Append(failuresList, failures)
 		}
